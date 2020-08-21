@@ -1,10 +1,10 @@
 import os
 
-def detectBinod(filename):
+def detectVirus(filename):
     with open(filename, "r") as f:
         lines = f.read()
 
-    if "binod" in lines.lower():
+    if "virus" in lines.lower():
         return True
 
     else:
@@ -17,15 +17,15 @@ if __name__ == '__main__':
 
     for content in contents_list:
         if content.endswith("txt"):
-            print(f"Detecting Binod In {content}")
+            print(f"Detecting Virus In {content}")
 
-            flag = detectBinod(content)
+            flag = detectVirus(content)
 
             if flag:
-                print(f"Binod Found in {content}")
+                print(f"Virus Found in {content}")
                 count += 1
 
             else:
-                print(f"Binod Not Found in {content}")
+                print(f"Virus Not Found in {content}")
 
-    print(f"\n{count} Files Have Binod Hidden in Them")
+    print(f"\n{count} Files Have Virus Hidden in Them")
