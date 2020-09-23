@@ -10,8 +10,6 @@
 
 
 #include <iostream>
-#include <string.h>
-#include <ctype.h>
 #define MAX 50
 using namespace std;
 
