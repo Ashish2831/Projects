@@ -6,7 +6,6 @@ def matching(userSentence, givenSentence, match):
     for word1 in userSentence:
         for word2 in givenSentence:
             if word1.lower() == word2.lower():
-                userList
                 return True
 
 
