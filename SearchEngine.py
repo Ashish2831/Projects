@@ -1,4 +1,4 @@
-def matching(userSentence, givenSentence, match):
+def matching(userSentence, givenSentence):
 
     userSentence = userSentence.split()
     givenSentence = givenSentence.split()
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     for i in range(len(Sentences)):
 
         count = False
-        count = matching(userinput, Sentences[i], match)
+        count = matching(userinput, Sentences[i])
 
         if count == True:
             userList.append(userinput)
